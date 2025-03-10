@@ -21,7 +21,6 @@ const Board = () => {
 
   return (
     <div>
-      <h1>Juego de la Memoria</h1>
       <h2>Score: {score}</h2>
       <button onClick={resetGame}>Reset Game</button>
       <div className="board">
