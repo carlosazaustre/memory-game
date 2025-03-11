@@ -16,14 +16,19 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
-  padding: 8px;
+  padding: 16px;
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .board {
@@ -78,6 +83,29 @@ body {
   font-size: var(--font-size-score);
   margin-bottom: var(--margin-bottom);
   text-align: center;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--margin-bottom);
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 16px;
+}
+
+.player {
+  padding: 1rem 2rem;
+  border-radius: var(--card-border-radius);
+  background-color: #fff;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player.active {
+  background-color: #4caf50;
+  color: white;
 }
 
 /* Tablet (768px y superior) */
